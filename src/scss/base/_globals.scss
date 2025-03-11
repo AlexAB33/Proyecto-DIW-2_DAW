@@ -74,3 +74,10 @@
     margin: 0 auto;
     padding: 0 v.$spacing-sm;
 }
+.registrar-login {
+    height: 100vh;
+    background-image: url("../img/login_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
