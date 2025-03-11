@@ -1,0 +1,21 @@
+// Importa base (que incluye normalize, globals, mixins, vars)
+@use "base";
+
+// Importa Bootstrap
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
+// Tu CSS personalizado aquí
+$primary: #000000;
+$secondary: #000000;
+$tertiary: #000000;
+$quaternary: #000000;
+
+.card {
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) !important;
+        cursor: pointer;
+    }
+} 

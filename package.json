@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-final-diw",
+  "version": "1.0.0",
+  "description": "Proyecto final DIW - Por José Antonio Segura Matute y Alejandro Arcos Bellido",
+  "main": "index.js",
+  "scripts": {
+    "compilar": "sass --watch --load-path=node_modules src/scss:build/css",
+    "build": "sass --load-path=node_modules src/scss:build/css && npm run purga && npm run copy-fonts",
+    "watch": "sass --watch --load-path=node_modules src/scss:build/css",
+    "purga": "purgecss --css build/css/styles.css --content *.html test.html --output build/css",
+    "copy-fonts": "copyfiles -f node_modules/bootstrap-icons/font/fonts/* build/fonts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "purgecss": "^5.0.0",
+    "sass": "^1.85.1"
+  }
+}
