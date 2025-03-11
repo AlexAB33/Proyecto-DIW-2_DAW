@@ -1,0 +1,125 @@
+@use 'base/vars' as v;
+@use 'sass:color';
+
+// Colores de Bootstrap
+$primary: v.$color-primario-claro;
+$secondary: v.$color-secundario-claro;
+$success: v.$color-verde;
+$info: v.$color-cuarto-claro;
+$warning: v.$color-amarillo;
+$danger: v.$color-rojo;
+$light: v.$color-cuarto-oscuro;
+$dark: v.$color-negro;
+
+// Tipografía
+$font-family-sans-serif: v.$font-family-base;
+$font-family-base: v.$font-family-base;
+$headings-font-family: v.$font-family-header;
+
+// Bootstrap usa rem con base 16px, mientras que nosotros usamos 62.5% (10px)
+// Por eso convertimos nuestros valores a la escala de Bootstrap
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+$font-size-lg: 1.25rem;
+
+$h1-font-size: $font-size-base * 2.5;      // 40px
+$h2-font-size: $font-size-base * 2;         // 32px
+$h3-font-size: $font-size-base * 1.75;      // 28px
+$h4-font-size: $font-size-base * 1.5;       // 24px
+$h5-font-size: $font-size-base * 1.25;      // 20px
+$h6-font-size: $font-size-base;             // 16px
+
+$headings-font-weight: v.$font-weight-bold;
+$headings-color: v.$color-negro;
+$headings-margin-bottom: v.$spacing-md;
+
+// Body
+$body-bg: v.$color-blanco;
+$body-color: v.$color-negro;
+
+// Links
+$link-color: v.$color-primario-claro;
+$link-decoration: none;
+$link-hover-color: darken(v.$color-primario-claro, 15%);
+$link-hover-decoration: underline;
+
+// Espaciado
+$spacer: 1rem;  // 16px en Bootstrap (rem base 16px)
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,    // 4px
+    2: $spacer * 0.5,     // 8px
+    3: $spacer,           // 16px
+    4: $spacer * 1.5,     // 24px
+    5: $spacer * 3,       // 48px
+);
+
+// Bordes
+$border-width: 1px;
+$border-color: v.$color-gris;
+$border-radius: v.$border-radius-md;
+$border-radius-sm: v.$border-radius-sm;
+$border-radius-lg: v.$border-radius-lg;
+$border-radius-pill: 50rem;
+
+// Sombras
+$box-shadow: v.$shadow-md;
+$box-shadow-sm: v.$shadow-sm;
+$box-shadow-lg: v.$shadow-lg;
+
+// Grid
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+);
+
+// Navbar
+$navbar-padding-y: v.$spacing-sm;
+$navbar-padding-x: v.$spacing-md;
+$navbar-nav-link-padding-x: v.$spacing-sm;
+$navbar-brand-font-size: $font-size-lg;
+$navbar-brand-padding-y: v.$spacing-xs;
+
+$navbar-light-color: v.$color-negro;
+$navbar-light-hover-color: v.$color-primario-claro;
+$navbar-light-active-color: v.$color-primario-claro;
+
+$navbar-dark-color: rgba(v.$color-blanco, .75);
+$navbar-dark-hover-color: v.$color-blanco;
+$navbar-dark-active-color: v.$color-blanco;
+
+// Cards
+$card-spacer-y: v.$spacing-md;
+$card-spacer-x: v.$spacing-md;
+$card-border-radius: v.$border-radius-lg;
+$card-border-color: v.$color-gris;
+$card-border-width: 0;
+$card-cap-bg: rgba(v.$color-negro, .03);
+$card-bg: v.$color-blanco;
+$card-box-shadow: v.$shadow-md;
+
+// Buttons
+$btn-padding-y: v.$spacing-xs;
+$btn-padding-x: v.$spacing-md;
+$btn-font-weight: v.$font-weight-medium;
+$btn-border-radius: v.$border-radius-md;
+$btn-border-radius-sm: v.$border-radius-sm;
+$btn-border-radius-lg: v.$border-radius-lg;
+$btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+// Forms
+$input-padding-y: v.$spacing-xs;
+$input-padding-x: v.$spacing-sm;
+$input-border-radius: v.$border-radius-md;
+$input-border-color: v.$color-gris;
+$input-focus-border-color: tint-color(v.$color-primario-claro, 50%);
+$input-focus-box-shadow: 0 0 0 0.25rem rgba(v.$color-primario-claro, 0.25);
+$form-label-margin-bottom: v.$spacing-xs;
+$form-label-font-weight: v.$font-weight-medium;
+
+// Importamos Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

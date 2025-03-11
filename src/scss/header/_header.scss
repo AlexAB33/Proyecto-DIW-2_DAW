@@ -1,0 +1,52 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.navbar {
+    background-color: v.$color-cuarto-claro;
+
+    &__brand {
+        font-weight: v.$font-weight-bold;
+    }
+}
+
+// Estilos para la barra de navegación
+.navbar-brand {
+    font-weight: v.$font-weight-bold;
+    
+    img {
+        height: 3rem;
+        margin-right: v.$spacing-sm;
+    }
+}
+
+// Estilos para botones personalizados
+.btn {
+    &-outline-primary,
+    &-outline-secondary {
+        &:hover {
+            color: v.$color-blanco;
+        }
+    }
+}
+
+// Estilos para secciones
+.section {
+    padding: v.$spacing-xl 0;
+    
+    &-title {
+        margin-bottom: v.$spacing-lg;
+        text-align: center;
+        position: relative;
+        
+        &::after {
+            content: '';
+            width: 5rem;
+            height: 4px;
+            background-color: v.$color-primario-claro;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+} 
