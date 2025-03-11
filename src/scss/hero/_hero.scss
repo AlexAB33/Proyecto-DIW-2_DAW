@@ -22,4 +22,16 @@
     .min-vh-75 {
         min-height: 75vh;
     }
+
+    .carousel-control-prev, .carousel-control-next {
+        z-index: 10;
+    }
+    
+    .overlay {
+        pointer-events: none;
+    }
+    
+    .hero-content {
+        z-index: 5;
+    }
 }

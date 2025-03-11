@@ -1,22 +1,24 @@
 @use '../base/vars' as v;
 
-.footer-divider {
-    position: relative;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.05);
-    overflow: hidden;
-}
-
-.divider-animation {
-    position: absolute;
-    height: 100%;
-    width: 30%;
-    background: linear-gradient(90deg, transparent, v.$color-principal, v.$color-secundario, transparent);
-    animation: flow 3s infinite linear;
-}
-
-.copyright {
-    background-color: rgba(0, 0, 0, 0.2);
+.footer {
+    &__divider {
+        position: relative;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.05);
+        overflow: hidden;
+        
+        &-animation {
+            position: absolute;
+            height: 100%;
+            width: 30%;
+            background: linear-gradient(90deg, transparent, v.$color-principal, v.$color-secundario, transparent);
+            animation: flow 3s infinite linear;
+        }
+    }
+    
+    &__copyright {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }
 
 @keyframes pulse {
