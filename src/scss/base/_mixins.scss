@@ -6,7 +6,7 @@
 }
 
 // Crear grid
-@mixin grid($columns, $rows, $gap: 10px) {
+@mixin grid($columns, $rows, $gap: v.$spacing-sm) {
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
     grid-template-rows: repeat($rows, 1fr);
@@ -14,7 +14,7 @@
 }
 
 // Crear flexbox
-@mixin flexbox($direction: row, $justify: center, $align: center, $gap: 0) {
+@mixin flexbox($direction: row, $justify: center, $align: center, $gap: v.$spacing-sm) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
@@ -29,10 +29,10 @@
     border: 0;
     display: block;
     font-weight: 700;
-    padding: 1rem 3rem;
+    padding: v.$spacing-sm v.$spacing-lg;
     text-align: center;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: v.$font-size-sm;
     transition: background-color 0.4s;
     cursor: pointer;
 

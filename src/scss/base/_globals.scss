@@ -1,5 +1,6 @@
 @use 'vars' as v;
 @use 'mixins' as m;
+@use 'sass:color';
 
 html {
     @include m.box-sizing(border-box);
@@ -24,50 +25,59 @@ html {
 
 body {
     font-family: v.$font-family-base;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    color: v.$color-primario-oscuro;
+    background-color: v.$color-cuarto-oscuro;
+    line-height: v.$line-height-md;
+}
+
+h1, h2, h3 {
+    font-family: v.$font-family-header;
+    margin: 0 0 v.$separation 0;
+    font-weight: 700;
+    line-height: v.$line-height-sm;
 }
 
 h1 {
-    font-size: 4.4rem;
-    font-family: v.$font-family-header;
-    margin: 0 0 v.$separation 0;
-    line-height: 1.2;
-}
-
-h2, h3 {
-    font-family: v.$font-family-header;
-    margin: 0 0 v.$separation 0;
-    line-height: 1.2;
+    font-size: v.$font-size-lg;
 }
 
 h2 {
-    font-size: 3.4rem;
+    font-size: v.$font-size-md;
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: v.$font-size-sm;
 }
 
 a {
     text-decoration: none;
-    font-size: 1.6rem;
+    color: v.$color-secundario-claro;
+    font-size: v.$font-size-sm;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: color.adjust(v.$color-secundario-claro, $lightness: -15%);
+    }
 }
 
 img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
     object-fit: cover;
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color: v.$color-negro;
+    font-size: v.$font-size-sm;
+    line-height: v.$line-height-md;
+    color: v.$color-primario-oscuro;
+    margin-bottom: v.$spacing-md;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     width: 95%;
+    padding: 0 v.$spacing-sm;
 }

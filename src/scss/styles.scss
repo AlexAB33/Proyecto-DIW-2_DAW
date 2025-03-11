@@ -1,21 +1,25 @@
 // Importa base (que incluye normalize, globals, mixins, vars)
 @use "base";
+@use "base/vars" as v;
+@use "base/custom" as c;
 
-// Importa Bootstrap
+// Importa Bootstrap (las variables ya están sobrescritas en _custom.scss)
 @use "../../node_modules/bootstrap/scss/bootstrap";
 
-// Tu CSS personalizado aquí
-$primary: #000000;
-$secondary: #000000;
-$tertiary: #000000;
-$quaternary: #000000;
+// Clases de utilidad para iconos
+.bi {
+    &.icon-sm { font-size: v.$font-size-sm; }
+    &.icon-md { font-size: v.$font-size-md; }
+    &.icon-lg { font-size: v.$font-size-lg; }
+    &.icon-xl { font-size: calc(v.$font-size-lg * 1.5); }
+}
 
 .card {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) !important;
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(v.$color-negro, 0.175) !important;
         cursor: pointer;
     }
 } 
