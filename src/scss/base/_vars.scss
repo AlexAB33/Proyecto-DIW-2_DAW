@@ -1,17 +1,13 @@
+@use 'sass:color';
+
 //* Colores
 // Colores - modo claro
-$color-principal-claro: #bee9e8;
-$color-primario-claro: #62b6cb;
-$color-secundario-claro: #1b4965;
-$color-terciario-claro: #cae9ff;
-$color-cuarto-claro: #5fa8d3;
-
-// Colores - modo oscuro
-$color-negro: #000000;
-$color-primario-oscuro: #2f4550;
-$color-secundario-oscuro: #586f7c;
-$color-terciario-oscuro: #B8DBD9;
-$color-cuarto-oscuro: #f4f4f9;
+$color-principal: #2B4E84;
+$color-secundario: #3e65a0;
+$color-terciario: #E8F0FB;
+$color-rojo-claro: #FFD3BD;
+$color-amarillo-claro: #FEE7AE;
+$color-verde-claro: #C8E6C9;
 
 // Otros colores
 $color-rojo: #dc3545;
@@ -20,6 +16,7 @@ $color-verde: #28a745;
 $color-amarillo: #ffc107;
 $color-gris: #d2d2d2;
 $color-blanco: #ffffff;
+$color-negro: #000000;
 
 //* Tipografía
 $font-family-base: 'Helvetica', sans-serif;
@@ -51,15 +48,15 @@ $spacing-md: 1.6rem;
 $spacing-lg: 2.4rem;       
 $spacing-xl: 3.2rem;       
 
-//* Espaciado de letras
-$letter-spacing-sm: 0.5px;
-$letter-spacing-md: 1px;
-$letter-spacing-lg: 1.5px;
+// * Espaciado de letras
+$letter-spacing-sm: 0.3px;
+$letter-spacing-md: 0.5px;
+$letter-spacing-lg: 0.7px;
 
-//* Espaciado de palabras
-$word-spacing-sm: 0.5px;
-$word-spacing-md: 1px;
-$word-spacing-lg: 1.5px;
+// * Espaciado de palabras
+$word-spacing-sm: 0.3px;
+$word-spacing-md: 0.5px;
+$word-spacing-lg: 0.7px;
 
 //* Espaciado de líneas
 $line-height-sm: 1.2;

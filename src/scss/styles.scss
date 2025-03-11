@@ -1,18 +1,5 @@
 @use 'custom';
 @use 'base';
 @use 'header';
+@use 'hero';
 @use 'features';
-@use 'base/vars' as v;
-
-// Utilidades adicionales
-.bi {
-    display: inline-block;
-    vertical-align: -0.125em;
-    
-    &.icon-xs { font-size: v.$font-size-xs; }
-    &.icon-sm { font-size: v.$font-size-sm; }
-    &.icon-md { font-size: v.$font-size-md; }
-    &.icon-lg { font-size: v.$font-size-lg; }
-    &.icon-xl { font-size: v.$font-size-xl; }
-}
-
