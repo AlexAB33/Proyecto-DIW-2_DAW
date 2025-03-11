@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="build/css/styles.css">
-    </head>
-
-
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+</head>
 <body class="registrar-login">
     <div class="container-fluid row h-100 align-content-center justify-content-center">                
         <div class="col-md-4"></div>
@@ -48,116 +45,91 @@
         </div>
         <div class="col-md-4"></div>
     </div>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (() => {
-                'use strict'
-            
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                const forms = document.querySelectorAll('.needs-validation')
-            
-                // Loop over them and prevent submission
-                Array.from(forms).forEach(form => {
-                    form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                
-                    form.classList.add('was-validated')
-                    }, false)
-                })
-            })()
-            </script>
-     </body>
-     
-   
-    
+
     <!-- FOOTER -->
-    <footer id="footer" class="py-3 bg-primary text-light">
-        <div class="footer-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="footer-desc">
-                            <div class="logo-footer">
-                                <a href="https://ciclos.iesruizgijon.es/?redirect=0">
-                                    <img src="img/logo.png" width="183" height="67" alt="Eguru">
-                                </a>
-                            </div>
-                            <p></p>
-                        </div>
+    <footer class="bg-primary text-light" id="footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="mb-4">
+                        <a href="https://ciclos.iesruizgijon.es/?redirect=0">
+                            <img src="img/logo.png" width="183" height="67" alt="IES Ruíz Gijón" class="img-fluid">
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                        <div class="footer-nav">
-                            <h4 class="text-light">Enlaces</h4>
-                            <ul>
-                               <li><a href="https://iesruizgijon.com">IES Ruiz Gijón</a></li>
-                               <li><a href="https://www.juntadeandalucia.es/educacion/portalseneca/web/pasen/inicio">PASEN</a></li>
-                               <li><a href="http://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza">FP Andalucía</a></li>
-                               <li><a href="https://www.todofp.es/inicio.html">TodoFP.es</a></li>
-    
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="social-media">
-                            <h4>Síganos</h4>
-                            <ul>
-                                <li class="smedia-01">
-                                    <a href="https://es-es.facebook.com/iesruizgijon/" target="_blank">
-                                        <span class="media-icon">
-                                        <i class="fa fa-facebook"></i>
-                                        </span>
-                                        <span class="media-name">Facebook</span>
-                                    </a>
-                                </li>
-    
-                                <li class="smedia-02">
-                                    <a href="https://twitter.com/IES_RuizGijon" target="_blank">
-                                        <span class="media-icon">
-                                        <i class="fa fa-twitter"></i>
-                                        </span>
-                                        <span class="media-name">Twitter</span>
-                                    </a>
-                                </li>
-    
-    
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-contact">
-                            <h4></h4>
-                            <p>C/ Paseo de Consolación, nº 1 - 41710 Utrera (Sevilla)</p>
-                                <p><i class="fa fa-phone-square"></i>Teléfono: 95 583 95 73</p>
-    
-                                <p><i class="fa fa-envelope"></i>
-                                E-mail: <a class="mail-link" href="mailto:41007898.edu@juntadeandalucia.es">41007898.edu@juntadeandalucia.es</a>
-                                </p>
-    
-                        </div>
-                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-light mb-3">Enlaces</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://iesruizgijon.com" class="text-white text-decoration-none">IES Ruiz Gijón</a></li>
+                        <li class="mb-2"><a href="https://www.juntadeandalucia.es/educacion/portalseneca/web/pasen/inicio" class="text-white text-decoration-none">PASEN</a></li>
+                        <li class="mb-2"><a href="http://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza" class="text-white text-decoration-none">FP Andalucía</a></li>
+                        <li class="mb-2"><a href="https://www.todofp.es/inicio.html" class="text-white text-decoration-none">TodoFP.es</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-light mb-3">Síganos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="https://es-es.facebook.com/iesruizgijon/" target="_blank" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook me-2"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://twitter.com/IES_RuizGijon" target="_blank" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter me-2"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <address class="text-white mb-0">
+                        <p>C/ Paseo de Consolación, nº 1 - 41710 Utrera (Sevilla)</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>Teléfono: 95 583 95 73</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>
+                            E-mail: <a class="text-white" href="mailto:41007898.edu@juntadeandalucia.es">41007898.edu@juntadeandalucia.es</a>
+                        </p>
+                    </address>
                 </div>
             </div>
         </div>
-    <div class="footer-foot">
+
+        <!-- Línea decorativa animada -->
+        <div class="position-relative overflow-hidden footer-divider">
+            <div class="divider-animation"></div>
+        </div>
         
-  <!-- Línea decorativa animada -->
-  <div class="footer-divider">
-    <div class="divider-animation"></div>
-  </div>
-  
-  <!-- Copyright -->
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="copyright">
-        <p>© 2025 <span>IES RUIZ GIJÓN</span> - Todos los derechos reservados</p>
-        <p class="footer-disclaimer">Pagina realizada por José Antonio Segura y Alejandro Arcos</p>
-      </div>
-    </div>
-    </div>
-    
+        <!-- Copyright -->
+        <div class="py-3 copyright">
+            <div class="container text-center">
+                <p class="my-2 text-white">© 2025 <span class="fw-bold">IES RUIZ GIJÓN</span> - Todos los derechos reservados</p>
+                <p class="small text-white">Pagina realizada por José Antonio Segura y Alejandro Arcos</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+        
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+        
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+            
+                form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
 </html>
