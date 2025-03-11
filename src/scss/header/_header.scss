@@ -5,7 +5,7 @@
     position: relative;
 
     img {
-        height: 7rem;
+        height: 6rem;
         
         @media (max-width: calc(v.$medium - 1px)) {
             height: 3rem;

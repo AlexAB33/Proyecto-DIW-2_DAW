@@ -1,83 +1,8 @@
 @use 'vars' as v;
-@use 'mixins' as m;
-@use 'sass:color';
-
-// html {
-//     @include m.box-sizing(border-box);
-//     padding: 0;
-//     margin: 0;
-//     font-size: 62.5%;
-// }
-
-// *, *::before, *::after {
-//     @include m.box-sizing(inherit);
-// }
-
-// @font-face {
-//     font-family: 'Inter';
-//     src: url('../../../fonts/');
-// }
-
-// @font-face {
-//     font-family: 'Helvetica';
-//     src: url('../../../fonts/');
-// }
-
-// body {
-//     font-family: v.$font-family-base;
-//     font-size: v.$font-size-base;
-//     background-color: v.$color-blanco;
-//     line-height: v.$line-height-md;
-// }
-
-// h1, h2, h3, h4, h5, h6 {
-//     font-family: v.$font-family-header;
-//     margin: 0 0 v.$spacing-md 0;
-//     font-weight: v.$font-weight-bold;
-//     line-height: v.$line-height-sm;
-//     color: v.$color-negro;
-// }
-
-// h1 { font-size: v.$font-size-xxl; }
-// h2 { font-size: v.$font-size-xl; }
-// h3 { font-size: v.$font-size-lg; }
-// h4 { font-size: v.$font-size-md; }
-// h5 { font-size: v.$font-size-base; }
-// h6 { font-size: v.$font-size-sm; }
-
-// a {
-//     text-decoration: none;
-//     color: v.$color-primario-claro;
-//     transition: color 0.3s ease;
-
-//     &:hover {
-//         color: color.adjust(v.$color-primario-claro, $lightness: -15%);
-//     }
-// }
-
-// img {
-//     max-width: 100%;
-//     height: auto;
-//     display: block;
-// }
-
-// p {
-//     font-size: v.$font-size-base;
-//     line-height: v.$line-height-md;
-//     color: v.$color-negro;
-//     margin: 0 0 v.$spacing-md 0;
-// }
 
 .container {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 v.$spacing-sm;
-}
-.registrar-login {
-    height: 100vh;
-    background-image: url("../img/login_background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
